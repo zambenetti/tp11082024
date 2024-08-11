@@ -34,18 +34,18 @@ header {
     background-color: #fff; /* Color de fondo al pasar el ratón */
     border-radius: 5px; /* Bordes redondeados */
 }
-/*casos*/
+
 .video {
     display: grid;
     padding: 20px;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     column-gap: 20px;
 }
 
 .video iframe {
     border: 5px solid #E9A051;
-    
+
 }
 footer {
     text-align: center;
@@ -58,9 +58,18 @@ footer {
 }
 
 
+
 img {
 
     width: 10%;
     text-align: left;
     border-radius: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .video {
+        grid-template-columns: 1fr;
+    }
 }
